@@ -1,6 +1,6 @@
 // src/services/icpService.js
 import { Actor, HttpAgent } from '@dfinity/agent';
-import { idlFactory as TraffixCanister_idl, canisterId as TraffixCanister_id } from 'declarations/TraffixCanister';
+import { idlFactory as TraffixCanister_idl, canisterId as TraffixCanister_id } from '../../src/declarations/TraffixCanister';
 
 // Create an agent to communicate with the ICP canister
 const agent = new HttpAgent();
