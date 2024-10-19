@@ -1,12 +1,12 @@
 actor TraffixCanister {
-  stable var reports : [Text] = [];
+  stable var reports: [Text] = [];
 
-  public func addReport(report : Text) : async Bool {
-    reports := reports # [report];
+  public func addReport(report: Text): async Bool {
+    reports := reports # [report];  // Correct text concatenation
     return true;
-  };
+  }
 
-  public query func getReports() : async [Text] {
+  public query func getReports(): async [Text] {
     return reports;
-  };
+  }
 }
